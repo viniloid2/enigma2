@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Cifra</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+    input {
+        margin-top: 20px;
+        padding: 10px;
+        background: black;
+        border: 1px solid white;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>01/12/06/01/02/05/20/15</h1>
+
+<input type="text" id="resposta" placeholder="Digite a resposta">
+
+<script>
+    document.getElementById("resposta").addEventListener("keyup", function(e) {
+        if (this.value.toLowerCase() === "alfabeto") {
+            window.location.href = "fase2.html";
+        }
+    });
+</script>
+
+</body>
+</html>
